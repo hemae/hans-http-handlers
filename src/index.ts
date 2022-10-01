@@ -18,7 +18,7 @@ export function error403(res: Response, message?: string) {
 }
 
 export function error400(res: Response, message?: string, additionalErrors?: Record<string, any>) {
-    res.status(401).json({message: message || 'Error at client side', ...additionalErrors})
+    res.status(400).json({message: message || 'Error at client side', ...additionalErrors})
 }
 
 export function status201(res: Response, data: Record<string, any>) {

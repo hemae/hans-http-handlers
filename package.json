@@ -1,6 +1,6 @@
 {
   "name": "hans-http-handlers",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "express http handlers",
   "main": "lib/index.js",
   "scripts": {
