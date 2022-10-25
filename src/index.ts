@@ -21,6 +21,10 @@ export function error400(res: Response, message?: string, additionalErrors?: Rec
     res.status(400).json({message: message || 'Error at client side', ...additionalErrors})
 }
 
+export function error404(res: Response, message?: string, additionalErrors?: Record<string, any>) {
+    res.status(404).json({message: message || 'Not found', ...additionalErrors})
+}
+
 export function status201(res: Response, data: Record<string, any>) {
     res.status(201).json({data})
 }
