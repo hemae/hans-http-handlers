@@ -26,7 +26,7 @@ export function error404(res: Response, message?: string, additionalErrors?: Rec
 }
 
 export function status201(res: Response, data: Record<string, any>) {
-    res.status(201).json({data})
+    res.status(201).json(data)
 }
 
 export function status200(res: Response, data: Record<string, any> | null) {
