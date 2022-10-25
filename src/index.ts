@@ -25,7 +25,7 @@ export function error404(res: Response, message?: string, additionalErrors?: Rec
     res.status(404).json({message: message || 'Not found', ...additionalErrors})
 }
 
-export function status201(res: Response, data: Record<string, any>) {
+export function status201(res: Response, data: Record<string, any> | null) {
     res.status(201).json(data)
 }
 
